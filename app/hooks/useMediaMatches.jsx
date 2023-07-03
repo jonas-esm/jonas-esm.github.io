@@ -5,6 +5,7 @@ const useMediaMatches = ({ breakpoint }) => {
 
   useEffect(() => {
     const mediaQueryList = window.matchMedia(`(max-width: ${breakpoint}px)`);
+    setIsMatch(mediaQueryList.matches);
     mediaQueryList.addEventListener("change", () => {
       setIsMatch(mediaQueryList.matches);
     });

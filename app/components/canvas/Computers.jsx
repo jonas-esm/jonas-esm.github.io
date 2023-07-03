@@ -57,6 +57,3 @@ const ComputerCanvas = () => {
 };
 
 export default ComputerCanvas;
-// export default function test() {
-//   return <img src="./static/logo.svg" alt="" />;
-// }
