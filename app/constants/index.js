@@ -3,6 +3,7 @@ import { typescript } from "../assets";
 import { html } from "../assets";
 import { css } from "../assets";
 import { reactjs } from "../assets";
+import { angular2 } from "../assets";
 import { redux } from "../assets";
 import { tailwind } from "../assets";
 import { nodejs } from "../assets";
@@ -61,56 +62,74 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
+    hideOnMobile: true,
   },
   {
     name: "TypeScript",
     icon: typescript,
+    hideOnMobile: true,
   },
   {
     name: "React JS",
+
     icon: reactjs,
+    hideOnMobile: false,
+  },
+  {
+    name: "Angular",
+
+    icon: angular2,
+    hideOnMobile: false,
   },
   {
     name: "Redux Toolkit",
+
     icon: redux,
+    hideOnMobile: true,
   },
   {
     name: "Tailwind CSS",
+
     icon: tailwind,
+    hideOnMobile: true,
   },
   {
     name: "Node JS",
+
     icon: nodejs,
+    hideOnMobile: false,
   },
   {
     name: "MongoDB",
+
     icon: mongodb,
+    hideOnMobile: false,
   },
   {
     name: "Three JS",
+
     icon: threejs,
+    hideOnMobile: true,
   },
   {
     name: "git",
+
     icon: git,
+    hideOnMobile: false,
   },
   {
     name: "figma",
+
     icon: figma,
+    hideOnMobile: true,
   },
   {
     name: "docker",
+
     icon: docker,
+    hideOnMobile: false,
   },
 ];
 
