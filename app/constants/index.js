@@ -12,6 +12,9 @@ import { figma } from "../assets";
 import { docker } from "../assets";
 import { meta } from "../assets";
 import { starbucks } from "../assets";
+import { libra } from "../assets";
+import { carehub } from "../assets";
+import { finflx } from "../assets";
 import { tesla } from "../assets";
 import { shopify } from "../assets";
 import { carrent } from "../assets";
@@ -51,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "UI Designer",
     icon: creator,
   },
 ];
@@ -113,55 +116,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Full Stack Developer",
+    company_name: "Libra Soft",
+    icon: libra,
+    iconBg: "#269FD0",
+    date: "July 2019 - February 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Developed and maintained various modules of the ERP system, ensuring smooth integration and functionality across different departments.`,
+      `Implemented responsive design and optimized user experience for the ERP system's front-end using modern web technologies.`,
+      `Collaborated with cross-functional teams to gather requirements, design database structures, and implement efficient backend solutions.`,
+      `Conducted thorough testing and debugging to identify and resolve any issues, ensuring high-quality and reliable software delivery.`,
+      `Actively participated in code reviews and provided constructive feedback to improve code quality and maintainability.`,
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Frontend Developer",
+    company_name: "Carehub",
+    icon: carehub,
+    iconBg: "#003D6E",
+    date: "February 2021 - April 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Created a user-friendly reservation system for home health care services, streamlining the booking process and improving overall customer satisfaction.`,
+      `Designed and developed a visually appealing and responsive landing page for the Carehub website, effectively showcasing their services and attracting potential clients.`,
+      `Developed a CRM dashboard to centralize customer information, enhance communication, and improve the efficiency of client management.`,
+      `Collaborated closely with UX designers and backend developers to ensure seamless integration of front-end components with the backend systems.`,
+      `Conducted performance optimizations and implemented SEO best practices to improve the website's visibility and search engine ranking.`,
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Frontend Developer",
+    company_name: "Finflx",
+    icon: finflx,
+    iconBg: "#474aa6",
+    date: "April 2022 - Current Position",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `Developed the corporate portal for Finflx, providing an intuitive and interactive interface for clients to access their financial data and analytics.`,
+      `Created the admin portal to empower Finflx administrators with powerful tools for managing users, data, and system configurations.`,
+      `Developed a mobile app for Finflx's SAAS platform, enabling users to access their financial information on-the-go and enhancing their overall user experience.`,
+      `Collaborated closely with UI/UX designers to ensure consistency in the user interface and provide a seamless user journey across different platforms.`,
+      `Implemented robust security measures and authentication mechanisms to safeguard sensitive financial data and ensure data privacy.`,
     ],
   },
 ];
