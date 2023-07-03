@@ -21,16 +21,16 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/pages/api-reference/components/image#unoptimized
    */
-  images: {
-    unoptimized: false,
+  // images: {
+  //   unoptimized: false,
 
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "randomuser.me",
-      },
-    ],
-  },
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "randomuser.me",
+  //     },
+  //   ],
+  // },
 };
 
 module.exports = nextConfig;
