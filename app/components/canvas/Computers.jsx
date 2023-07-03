@@ -51,7 +51,7 @@ const ComputerCanvas = () => {
         />
         <Computers />
       </Suspense>
-      <Preload all />
+      <Preload />
     </Canvas>
   );
 };
