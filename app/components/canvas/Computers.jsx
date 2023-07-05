@@ -11,7 +11,10 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import useMediaMatches from "@/app/hooks/useMediaMatches";
 const Computers = () => {
   // const computer2 = useGLTF("./static/desktop_pc/scene.gltf");
-  const computer = useLoader(GLTFLoader, "./static/desktop_pc/scene.gltf");
+  const computer = useLoader(
+    GLTFLoader,
+    "./static/new_computer_scene/scene.gltf"
+  );
   const { isMatch } = useMediaMatches({ breakpoint: 500 });
 
   return (
@@ -28,7 +31,7 @@ const Computers = () => {
       />
       <primitive
         object={computer.scene}
-        scale={isMatch ? 0.55 : 0.75}
+        scale={isMatch ? 0.05 : 0.09}
         position={[0, -3.25, -1.5]}
         rotation={[-0.01, -0.02, -0.01]}
       />
@@ -46,6 +49,7 @@ const ComputerCanvas = () => {
       <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
+          autoRotate
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

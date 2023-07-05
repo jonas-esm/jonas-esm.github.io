@@ -36,7 +36,7 @@ const Contact = () => {
         "8yG-rI8vuHMtCNBiy"
       )
       .then((res) => {
-        setLoading(true);
+        setLoading(false);
         //Success toast [todo]
         setForm({ email: "", name: "", message: "" });
       })
