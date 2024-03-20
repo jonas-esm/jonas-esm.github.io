@@ -8,7 +8,7 @@ import {
 } from "@react-three/drei";
 import Loader from "../Loader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import useMediaMatches from "@/app/hooks/useMediaMatches";
+import useMediaMatches from "../../hooks/useMediaMatches";
 const Computers = () => {
   // const computer2 = useGLTF("./static/desktop_pc/scene.gltf");
   const computer = useLoader(
