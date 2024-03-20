@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { ComputersCanvas } from "./canvas";
-import { isNotMobileDevice } from "../utils/utils";
+import { clientOsName, isNotMobileDevice, userAgentName } from "../utils/utils";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto z-5">
@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      {isNotMobileDevice() ? (
+      {!isNotMobileDevice() ? (
         <div className="w-full h-full  z-3">
           <ComputersCanvas />
         </div>

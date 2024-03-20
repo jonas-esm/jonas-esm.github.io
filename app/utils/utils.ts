@@ -1,15 +1,17 @@
-const clientOsName = () => {
-  const userAgent = navigator.userAgent;
+export const clientOsName = () => {
+  const userAgent = navigator.userAgent.toLowerCase();
 
-  if (/(android)/i.test(userAgent)) {
+  if (/android/.test(userAgent)) {
     return "Android";
-  } else if (/(iphone|ipad|ipod)/i.test(userAgent)) {
+  } else if (/iphone|ipad|ipod/.test(userAgent)) {
     return "iOS";
-  } else if (/(mac)/i.test(userAgent)) {
+  } else if (/macintosh|mac os x/.test(userAgent)) {
     return "Mac";
-  } else if (/(windows)/i.test(userAgent)) {
+  } else if (/windows/.test(userAgent)) {
     return "Windows";
-  } else if (/(cros)/i.test(userAgent)) {
+  } else if (/linux/.test(userAgent)) {
+    return "Linux";
+  } else if (/cros/.test(userAgent)) {
     return "Chromebook";
   } else {
     return "Unknown";
@@ -23,13 +25,14 @@ enum osTypes {
   "Windows" = "Windows",
   "Chromebook" = "Chromebook",
   "Unknown" = "Unknown",
+  "Linux" = "Linux",
 }
 
 export const isNotMobileDevice = () => {
   const osName: `${osTypes}` = clientOsName();
 
-  if (["Windows", "Mac"].indexOf(osName) < 0) {
-    return true;
+  if (["Windows", "Mac", "Linux"].some((item) => item === osName)) {
+    return false;
   }
-  return false;
+  return true;
 };
