@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { ComputersCanvas } from "./canvas";
-import { isNotMobileDevice } from "../utils/utils";
+import { isMobileDevice } from "../utils/utils";
 import { CodeEditorCard } from "./code-editor-card";
 
 const Hero = () => {
@@ -25,11 +25,11 @@ const Hero = () => {
             Specializing in crafting captivating user interfaces and dynamic web
             applications.
           </p>
-          {isNotMobileDevice() ? null : <CodeEditorCard />}
+          {isMobileDevice() ? <CodeEditorCard /> : null}
         </div>
       </div>
 
-      {isNotMobileDevice() ? (
+      {!isMobileDevice() ? (
         <div className="w-full h-full  z-3">
           <ComputersCanvas />
         </div>

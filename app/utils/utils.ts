@@ -28,7 +28,7 @@ enum osTypes {
   "Linux" = "Linux",
 }
 
-export const isNotMobileDevice = () => {
+export const isMobileDevice = () => {
   const osName: `${osTypes}` = clientOsName();
 
   if (["Windows", "Mac", "Linux"].some((item) => item === osName)) {
