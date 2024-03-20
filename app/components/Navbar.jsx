@@ -53,7 +53,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-2-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-2-[140px] z-10 rounded-xl menu-blurred`}
             onClick={() => {}}
           >
             <ul className="list-none flex  justify-end items-start flex-col gap-4 ">
