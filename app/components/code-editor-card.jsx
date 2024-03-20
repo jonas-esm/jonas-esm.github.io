@@ -4,7 +4,7 @@ export const CodeEditorCard = () => {
   return (
     <div
       class={` code-editor bg-[#272822] rounded-lg w-[300px] overflow-hidden z-40 
-mt-[140px] max-w-7xl  h-[300px]`}
+mt-[100px] max-w-7xl  h-[300px]`}
     >
       <div class="code-toolbar bg-[#1e1e1e] p-2 flex items-start">
         <button class="toolbar-btn bg-none border-none color-[#d3d3d3] text-[18px] cursor-pointer ml-2 rounded-full bg-red-500 w-3 h-3" />
