@@ -2,7 +2,9 @@ import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { ComputersCanvas } from "./canvas";
-import { clientOsName, isNotMobileDevice, userAgentName } from "../utils/utils";
+import { isNotMobileDevice } from "../utils/utils";
+import { CodeEditorCard } from "./code-editor-card";
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto z-5">
@@ -23,9 +25,11 @@ const Hero = () => {
             Specializing in crafting captivating user interfaces and dynamic web
             applications.
           </p>
+          {isNotMobileDevice() ? null : <CodeEditorCard />}
         </div>
       </div>
-      {!isNotMobileDevice() ? (
+
+      {isNotMobileDevice() ? (
         <div className="w-full h-full  z-3">
           <ComputersCanvas />
         </div>
